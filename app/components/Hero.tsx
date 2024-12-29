@@ -4,18 +4,8 @@ const Hero: React.FC = () => {
     return (
         <div className="text-white min-h-screen bg-gradient-to-br from-slate-950 to-slate-900 pt-12 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
-                <div className="flex justify-between items-center animate-fade-in-down">
-                    <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-glow">
 
-                    </h1>
-                    <button className="bg-transparent border border-blue-400 text-blue-400 rounded-lg px-6 py-2 text-sm hover:bg-blue-400 hover:text-white transition-all duration-300">
-                        Contact Me
-                    </button>
-                </div>
-
-                {/* Hero Content */}
-                <div className="mt-10 md:mt-10 flex flex-col md:flex-row items-center justify-between animate-fade-in">
+                <div className="mt-10 md:mt-24 flex flex-col md:flex-row items-center justify-between animate-fade-in">
                     {/* Text Content */}
                     <div className="md:w-1/2 space-y-8 text-center md:text-left">
                         <div className="space-y-3">
@@ -33,7 +23,7 @@ const Hero: React.FC = () => {
                             </p>
                         </div>
 
-                        <p className="text-slate-400 max-w-xl mx-auto md:mx-0 leading-relaxed animate-fade-in-up">
+                        <p className="text-slate-400 max-w-xl mx-auto md:mx-0 leading-relaxed animate-fade-in-up text-lg">
                             Transforming ideas into elegant, scalable solutions. Passionate about creating
                             seamless digital experiences that make a difference.
                         </p>

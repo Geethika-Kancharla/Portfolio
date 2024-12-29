@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="bg-slate-950 min-h-screen flex flex-col scroll-smooth">
       <Navbar />
-      <Links/>
+      <Links />
       <div id="home">
         <Hero />
       </div>

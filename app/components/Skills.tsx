@@ -1,51 +1,73 @@
-
 "use client"
 
 import React from 'react';
-import { SiReact, SiTypescript, SiNodedotjs, SiMongodb, SiTailwindcss, SiNextdotjs, SiGit, SiDocker } from 'react-icons/si';
-import { FaDatabase, FaAws } from 'react-icons/fa';
+import {
+  SiReact,
+  SiTypescript,
+  SiMongodb,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiGit,
+  SiDocker,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiBootstrap,
+  SiSpringboot,
+  SiFirebase,
+  SiMysql,
+  SiPostman
+} from 'react-icons/si';
 
 const Skills: React.FC = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
       skills: [
+        { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
         { name: "React.js", icon: SiReact, color: "#61DAFB" },
         { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-        { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
+        { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+        { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+        { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+        { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+        { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
+        { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-        { name: "SQL", icon: FaDatabase, color: "#336791" },
-        { name: "AWS", icon: FaAws, color: "#FF9900" },
+        { name: "MySQL", icon: SiMysql, color: "#4479A1" }
+
       ]
     },
     {
       title: "Tools & Technologies",
       skills: [
-        { name: "Git", icon: SiGit, color: "#F05032" },
+
         { name: "Docker", icon: SiDocker, color: "#2496ED" },
+        { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+        { name: "Git", icon: SiGit, color: "#F05032" }
       ]
     }
   ];
 
   return (
-    <section id="skills" className="text-white min-h-screen bg-gradient-to-br from-slate-950 to-slate-900 py-20">
+    <section id="skills" className="text-white min-h-screen bg-gradient-to-br from-slate-950 to-slate-900 py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold mt-12">
             Technical
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text ml-3">
               Skills
             </span>
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            A showcase of my technical expertise and the technologies I work with to build modern web applications.
+            A showcase of my technical expertise and the technologies I work with to build modern applications.
           </p>
         </div>
 
@@ -53,7 +75,7 @@ const Skills: React.FC = () => {
           {skillCategories.map((category, idx) => (
             <div
               key={category.title}
-              className="bg-slate-900/50 rounded-xl p-6 backdrop-blur-sm border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group animate-fade-in-up"
+              className="bg-slate-900/50 rounded-xl p-6 backdrop-blur-sm border border-blue-500/50 transition-all duration-300 group animate-fade-in-up"
               style={{ animationDelay: `${idx * 150}ms` }}
             >
               <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
@@ -76,7 +98,6 @@ const Skills: React.FC = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

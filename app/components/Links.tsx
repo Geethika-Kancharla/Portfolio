@@ -6,15 +6,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Links: React.FC = () => {
-    // Direct email handling function
+
     const openEmail = () => {
         window.open('mailto:geethikak004@gmail.com', '_blank');
     };
 
     return (
-        <div className="fixed right-6 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 z-50">
-            <Link 
-                href="https://github.com/Geethika-Kancharla" 
+        <div className="hidden fixed right-6 top-1/2 transform -translate-y-1/2 md:flex flex-col space-y-4 z-50">
+            <Link
+                href="https://github.com/Geethika-Kancharla"
                 target="_blank"
                 className="group relative"
             >
@@ -25,9 +25,9 @@ const Links: React.FC = () => {
                     GitHub Profile
                 </span>
             </Link>
-            
-            <Link 
-                href="https://www.linkedin.com/in/your-profile" 
+
+            <Link
+                href="https://www.linkedin.com/in/your-profile"
                 target="_blank"
                 className="group relative"
             >
@@ -38,8 +38,8 @@ const Links: React.FC = () => {
                     LinkedIn Profile
                 </span>
             </Link>
-            
-            <button 
+
+            <button
                 onClick={openEmail}
                 className="group relative"
                 aria-label="Send email"

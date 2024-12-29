@@ -27,7 +27,7 @@ const Links: React.FC = () => {
             </Link>
 
             <Link
-                href="https://www.linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/geethika-kancharla-4634092a2"
                 target="_blank"
                 className="group relative"
             >

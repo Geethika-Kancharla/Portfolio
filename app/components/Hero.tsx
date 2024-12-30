@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
                                 Hi there! I'm
                             </p>
                             <h2 className="text-6xl md:text-8xl font-extrabold leading-tight animate-slide-in-right">
-                                John Doe
+                                Geethika
                             </h2>
                             <p className="text-3xl md:text-4xl text-slate-300 animate-slide-in-left">
                                 Full Stack

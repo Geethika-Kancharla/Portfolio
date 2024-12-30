@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
         "JWT",
         "MongoDB"
       ],
-      "image": "/api/placeholder/600/400",
+      "image": "images/DevCollab.png",
       "github": "https://github.com/Geethika-Kancharla/DevCollab",
       "live": "https://devcollab-demo.com",
 
@@ -36,9 +36,9 @@ const Projects: React.FC = () => {
         "Open Food Facts API",
         "Edamam API"
       ],
-      "image": "/api/placeholder/600/400",
+      "image": "images/FS.png",
       "github": "https://github.com/Geethika-Kancharla/FreshSaver",
-      "live": "https://freshsaver-demo.com",
+      "live": "https://fresh-saver.vercel.app/",
 
     },
     {
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
         "Spring Boot",
         "MySQL"
       ],
-      "image": "/api/placeholder/600/400",
+      "image": "images/BloodServe.png",
       "github": "https://github.com/Geethika-Kancharla/BloodServe",
       "live": "https://bloodserve-demo.com",
 
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
         "Flask",
         "Tailwind CSS"
       ],
-      "image": "/api/placeholder/600/400",
+      "image": "images/IWeb.jpg",
       "github": "https://github.com/Geethika-Kancharla/IWeb",
       "live": "https://iweb-demo.com"
 
@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
         "Python (Flask)",
         "Firebase"
       ],
-      "image": "/api/placeholder/600/400",
+      "image": "images/CarbMine.png",
       "github": "https://github.com/Geethika-Kancharla/CarbMine",
       "live": "https://carbmine-demo.com",
       "category": "Climate Change"
@@ -107,11 +107,11 @@ const Projects: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="flex flex-wrap gap-12 justify-center">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
-              className="group bg-slate-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/50 transition-all duration-300 hover:scale-105 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+              className="group bg-slate-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/50 transition-all duration-300 hover:scale-105"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.2, duration: 0.6 }}
@@ -120,7 +120,7 @@ const Projects: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
                 <div className="absolute top-4 right-4 flex gap-3">

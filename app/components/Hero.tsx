@@ -34,9 +34,11 @@ const Hero: React.FC = () => {
                                     GitHub Profile
                                 </button>
                             </Link> */}
+                            <Link href="https://drive.google.com/file/d/1QtrFipNdOcUmaifs2wQRV44wPamIQ-pC/view?usp=drive_link">
                             <button className="bg-transparent border border-blue-400 text-blue-400 px-8 py-3 rounded-lg shadow-md hover:bg-blue-400 hover:text-white hover:shadow-lg transition-transform transform hover:scale-105 duration-300 ">
                                 Resume
                             </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -44,7 +46,7 @@ const Hero: React.FC = () => {
                     <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center items-center relative ">
                         <div className="relative w-96 h-96 md:w-[30rem] md:h-[30rem] flex items-center justify-center">
                             <img
-                                src="images/profile.lpg.jpg"
+                                src="images/image.png"
                                 alt="John Doe - Developer Portrait"
                                 className="rounded-full bg-slate-800 object-cover shadow-lg hover:shadow-xl transition-shadow duration-300 animate-pop-in w-72 h-72"
                             />

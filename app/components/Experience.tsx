@@ -3,37 +3,23 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      logo: "/api/placeholder/64/64",
-      duration: "2023 - Present",
+      title: "Next.js Developer Intern",
+      company: "Clipsi",
+      logo: "images/Clipsi.jpg",
+      duration: "Oct 2024 - Present",
       description:
-        "Led development of scalable web applications using React, Node.js, and MongoDB. Improved application performance by 40% through optimization techniques.",
+        "Developed scalable, server-rendered applications ensuring responsiveness across all devices. Collaborated with cross-functional teams to implement backend integrations and third-party services, enhancing data fetching efficiency.",
+
     },
     {
-      title: "Software Developer Intern",
-      company: "Innovation Labs",
-      logo: "/api/placeholder/64/64",
-      duration: "2022 - 2023",
+      title: "Member",
+      company: "Point Blank",
+      logo: "images/PB.jpg",
+      duration: "March 2024 - Present",
       description:
-        "Collaborated with senior developers to build and maintain web applications. Implemented responsive designs and RESTful APIs.",
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      logo: "/api/placeholder/64/64",
-      duration: "2023 - Present",
-      description:
-        "Led development of scalable web applications using React, Node.js, and MongoDB. Improved application performance by 40% through optimization techniques.",
-    },
-    {
-      title: "Software Developer Intern",
-      company: "Innovation Labs",
-      logo: "/api/placeholder/64/64",
-      duration: "2022 - 2023",
-      description:
-        "Collaborated with senior developers to build and maintain web applications. Implemented responsive designs and RESTful APIs.",
+        "Point Blank is an interdisciplinary team of programmers that focuses on developing a coding culture in DSCE through participation in competitions such as ACM-ICPC, GSoC and SIH.",
     }
+
   ];
 
   return (
@@ -53,11 +39,9 @@ const Experience = () => {
               <div className="absolute left-1/2 w-8 h-8 -translate-x-1/2 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full z-10 border-4 border-slate-900" />
 
               <div
-                className={`flex flex-col md:flex-row ${
-                  index % 2 === 0 ? "md:justify-start" : "md:justify-end"
-                } w-full md:w-5/12 ${
-                  index % 2 === 0 ? "md:ml-auto md:mr-16" : "md:mr-auto md:ml-16"
-                }`}
+                className={`flex flex-col md:flex-row ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                  } w-full md:w-5/12 ${index % 2 === 0 ? "md:ml-auto md:mr-16" : "md:mr-auto md:ml-16"
+                  }`}
               >
                 <div className="w-full bg-slate-900/50 rounded-2xl p-6 md:p-8 border border-slate-800 shadow-xl backdrop-blur-xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:scale-105">
                   <div className="flex items-center gap-4 md:gap-10 mb-6">
@@ -66,7 +50,7 @@ const Experience = () => {
                         <img
                           src={exp.logo}
                           alt={`${exp.company} logo`}
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover rounded-full"
                         />
                       </div>
                     </div>

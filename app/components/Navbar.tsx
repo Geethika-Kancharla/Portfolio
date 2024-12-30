@@ -81,7 +81,6 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Mobile Menu */}
                 <div
                     className={`sm:hidden transition-all duration-300 overflow-hidden ${
                         isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'

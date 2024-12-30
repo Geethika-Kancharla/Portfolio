@@ -7,34 +7,83 @@ import { motion } from "framer-motion";
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce solution with real-time inventory tracking and secure payment processing. Features include user authentication, product management, and order tracking.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Stripe"],
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/johndoe/ecommerce",
-      live: "https://ecommerce-demo.com",
-      category: "Full Stack",
+      "title": "DevCollab",
+      "description": "DevCollab is a real-time collaborative code editor that enables multiple users to write and edit code simultaneously.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "SockJS",
+        "STOMP",
+        "Monaco Editor",
+        "Spring Boot",
+        "WebSocket",
+        "JWT",
+        "MongoDB"
+      ],
+      "image": "/api/placeholder/600/400",
+      "github": "https://github.com/Geethika-Kancharla/DevCollab",
+      "live": "https://devcollab-demo.com",
+
     },
     {
-      title: "AI Task Manager",
-      description:
-        "An intelligent task management system with AI-powered prioritization and natural language processing. Includes team collaboration features and performance analytics.",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "PostgreSQL"],
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/johndoe/taskmanager",
-      live: "https://task-manager-demo.com",
-      category: "Machine Learning",
+      "title": "FreshSaver",
+      "description": "FreshSaver is a web application designed to help users manage their food inventory efficiently by leveraging barcode scanning technology. It aims to reduce food wastage and promote sustainable consumption through timely expiration date tracking and recipe suggestions.",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Firebase",
+        "Open Food Facts API",
+        "Edamam API"
+      ],
+      "image": "/api/placeholder/600/400",
+      "github": "https://github.com/Geethika-Kancharla/FreshSaver",
+      "live": "https://freshsaver-demo.com",
+
     },
     {
-      title: "Social Analytics Dashboard",
-      description:
-        "Real-time social media analytics platform providing sentiment analysis and engagement metrics visualization. Helps businesses make data-driven decisions.",
-      technologies: ["Vue.js", "Node.js", "MongoDB", "D3.js", "Socket.io"],
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/johndoe/analytics",
-      live: "https://social-analytics.com",
-      category: "Data Visualization",
+      "title": "BloodServe",
+      "description": "BloodServe is a web application which features role-based authentication, allowing users to register as donors and access analytical summaries of donor distributions by blood group. The system includes CRUD operations, enabling admins to manage donor records.",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Spring Boot",
+        "MySQL"
+      ],
+      "image": "/api/placeholder/600/400",
+      "github": "https://github.com/Geethika-Kancharla/BloodServe",
+      "live": "https://bloodserve-demo.com",
+
+    },
+    {
+      "title": "IWeb",
+      "description": "IWeb is a web application designed to enhance accessibility for individuals with visual impairments by utilizing advanced object detection technology.",
+      "technologies": [
+        "Object Detection Framework (YOLO)",
+        "Text-to-Speech (Web-Speech API)",
+        "React",
+        "Flask",
+        "Tailwind CSS"
+      ],
+      "image": "/api/placeholder/600/400",
+      "github": "https://github.com/Geethika-Kancharla/IWeb",
+      "live": "https://iweb-demo.com"
+
+    },
+    {
+      "title": "CarbMine",
+      "description": "CarbMine is a web application that empowers features like carbon emission estimation, carbon neutrality simulations, data visualization, carbon credit calculations, and allows users to generate and store PDF reports of their analysis.",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "GSAP",
+        "Python (Flask)",
+        "Firebase"
+      ],
+      "image": "/api/placeholder/600/400",
+      "github": "https://github.com/Geethika-Kancharla/CarbMine",
+      "live": "https://carbmine-demo.com",
+      "category": "Climate Change"
     },
   ];
 
@@ -58,11 +107,11 @@ const Projects: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap gap-12 justify-center">
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
-              className="group bg-slate-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/50 transition-all duration-300 hover:scale-105"
+              className="group bg-slate-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/50 transition-all duration-300 hover:scale-105 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.2, duration: 0.6 }}
@@ -99,9 +148,6 @@ const Projects: React.FC = () => {
                   <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
                     {project.title}
                   </h3>
-                  <span className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">
-                    {project.category}
-                  </span>
                 </div>
 
                 <p className="text-slate-300 text-sm leading-relaxed">

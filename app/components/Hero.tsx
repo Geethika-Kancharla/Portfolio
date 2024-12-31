@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
                     <div className="md:w-1/2 space-y-8 text-center md:text-left">
                         <div className="space-y-3">
                             <p className="text-blue-400 font-medium text-2xl animate-slide-in-left">
-                                Hi there! I'm
+                                Hi there! I`m
                             </p>
                             <h2 className="text-6xl md:text-8xl font-extrabold leading-tight animate-slide-in-right">
                                 Geethika

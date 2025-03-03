@@ -16,7 +16,8 @@ import {
   SiSpringboot,
   SiFirebase,
   SiMysql,
-  SiPostman
+  SiPostman,
+  SiPostgresql
 } from 'react-icons/si';
 
 const Skills: React.FC = () => {
@@ -41,8 +42,8 @@ const Skills: React.FC = () => {
         { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
         { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-        { name: "MySQL", icon: SiMysql, color: "#4479A1" }
-
+        { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+        { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" }
       ]
     },
     {

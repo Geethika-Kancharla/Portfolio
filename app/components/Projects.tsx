@@ -56,6 +56,19 @@ const Projects: React.FC = () => {
 
     },
     {
+      "title": "PRotect",
+      "description": "A GitHub App(bot) that automatically scans pull requests, identifies malicious code, and prevents security threats before they get merged. The bot provides inline PR comments, assigns a security score, and auto-closes PRs that fall below a threshold, ensuring your repository remains safe from supply chain attacks.",
+      "technologies": [
+        "GitHub App",
+      "Probot",
+      "Node.js",
+      ],
+      "image": "images/Install.jpg",
+      "github": "https://github.com/Geethika-Kancharla/PRotect",
+      "live": "https://github.com/apps/pryrag"
+
+    },
+    {
       "title": "IWeb",
       "description": "IWeb is a web application designed to enhance accessibility for individuals with visual impairments by utilizing advanced object detection technology.",
       "technologies": [

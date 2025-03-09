@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
                                     GitHub Profile
                                 </button>
                             </Link> */}
-                            <Link href="https://drive.google.com/file/d/13d-asqAutrdyhtjpwi5kvMqy1-MQrSIf/view?usp=sharing">
+                            <Link href="https://drive.google.com/file/d/1cGosuxoCYy2CkaCCQ7UXkVPh8y2I3Une/view?usp=drive_link">
                             <button className="bg-transparent border border-blue-400 text-blue-400 px-8 py-3 rounded-lg shadow-md hover:bg-blue-400 hover:text-white hover:shadow-lg transition-transform transform hover:scale-105 duration-300 ">
                                 Resume
                             </button>

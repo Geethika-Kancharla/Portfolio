@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
       ],
       "image": "images/DevCollab.png",
       "github": "https://github.com/Geethika-Kancharla/DevCollab",
-      "live": "https://devcollab-demo.com",
+      "live": "https://blood-serve.vercel.app/",
 
     },
     {
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
       ],
       "image": "images/BloodServe.png",
       "github": "https://github.com/Geethika-Kancharla/BloodServe",
-      "live": "https://bloodserve-demo.com",
+      "live": "https://dev-collab-eight.vercel.app/",
 
     },
     {

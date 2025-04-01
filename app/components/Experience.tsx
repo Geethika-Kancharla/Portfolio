@@ -6,7 +6,7 @@ const Experience = () => {
       title: "Next.js Developer Intern",
       company: "Clipsi",
       logo: "images/Clipsi.jpg",
-      duration: "Oct 2024 - Present",
+      duration: "Oct 2024 - Jan 2025",
       description:
         "Developed scalable, server-rendered applications ensuring responsiveness across all devices. Collaborated with cross-functional teams to implement backend integrations and third-party services, enhancing data fetching efficiency.",
 

@@ -26,21 +26,7 @@ const Projects: React.FC = () => {
       "live": "https://devcollab-demo.com",
 
     },
-    {
-      "title": "FreshSaver",
-      "description": "FreshSaver is a web application designed to help users manage their food inventory efficiently by leveraging barcode scanning technology. It aims to reduce food wastage and promote sustainable consumption through timely expiration date tracking and recipe suggestions.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Firebase",
-        "Open Food Facts API",
-        "Edamam API"
-      ],
-      "image": "images/FS.png",
-      "github": "https://github.com/Geethika-Kancharla/FreshSaver",
-      "live": "https://fresh-saver.vercel.app/",
-
-    },
+    
     {
       "title": "BloodServe",
       "description": "BloodServe is a web application which features role-based authentication, allowing users to register as donors and access analytical summaries of donor distributions by blood group. The system includes CRUD operations, enabling admins to manage donor records.",
@@ -66,6 +52,37 @@ const Projects: React.FC = () => {
       "image": "images/Install.jpg",
       "github": "https://github.com/Geethika-Kancharla/PRotect",
       "live": "https://github.com/apps/pryrag"
+
+    },
+    {
+      "title": "TalentMatch",
+      "description": "TalentMatch-AI is a centralized platform that uses an AI-powered agent to match student resumes with job opportunities posted by companies. It automates the process of sorting and ranking resumes based on relevance to company job descriptions, allowing businesses to find the best candidates efficiently.",
+      "technologies": [
+        "Next.js",
+      "Python",
+      "Flask",
+      "OpenAI",
+      "Tailwind CSS",
+      "Firebase",
+      ],
+      "image": "images/Talent.jpeg",
+      "github": "https://github.com/Geethika-Kancharla/TalentMatch-AI",
+      "live": "https://www.youtube.com/watch?v=wgkMXzazlmQ"
+
+    },
+    {
+      "title": "FreshSaver",
+      "description": "FreshSaver is a web application designed to help users manage their food inventory efficiently by leveraging barcode scanning technology. It aims to reduce food wastage and promote sustainable consumption through timely expiration date tracking and recipe suggestions.",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Firebase",
+        "Open Food Facts API",
+        "Edamam API"
+      ],
+      "image": "images/FS.png",
+      "github": "https://github.com/Geethika-Kancharla/FreshSaver",
+      "live": "https://fresh-saver.vercel.app/",
 
     },
     {

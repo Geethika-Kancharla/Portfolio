@@ -17,7 +17,8 @@ import {
   SiFirebase,
   SiMysql,
   SiPostman,
-  SiPostgresql
+  SiPostgresql,
+  SiGithubactions
 } from 'react-icons/si';
 
 const Skills: React.FC = () => {
@@ -49,7 +50,7 @@ const Skills: React.FC = () => {
     {
       title: "Tools & Technologies",
       skills: [
-
+        { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" },
         { name: "Docker", icon: SiDocker, color: "#2496ED" },
         { name: "Postman", icon: SiPostman, color: "#FF6C37" },
         { name: "Git", icon: SiGit, color: "#F05032" }

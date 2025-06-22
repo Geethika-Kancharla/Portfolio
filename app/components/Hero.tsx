@@ -29,11 +29,11 @@ const Hero: React.FC = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
-                            {/* <Link href="https://github.com/Geethika-Kancharla">
+                            <Link href="https://github.com/Geethika-Kancharla">
                                 <button className="bg-blue-500 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition-transform transform hover:scale-105 duration-300 md:text-lg">
-                                    GitHub Profile
-                                </button>
-                            </Link> */}
+                                     GitHub Profile
+                                 </button>
+                             </Link>
                             <Link href="https://drive.google.com/file/d/1xyd9ZudbD0tNFp3oCCmtQ6cYwuv6e7e3/view?usp=sharing">
                             <button className="bg-transparent border border-blue-400 text-blue-400 px-8 py-3 rounded-lg shadow-md hover:bg-blue-400 hover:text-white hover:shadow-lg transition-transform transform hover:scale-105 duration-300 ">
                                 Resume

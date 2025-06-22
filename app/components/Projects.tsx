@@ -6,26 +6,6 @@ import { motion } from "framer-motion";
 
 const Projects: React.FC = () => {
   const projects = [
-    {
-      "title": "DevCollab",
-      "description": "DevCollab is a real-time collaborative code editor that enables multiple users to write and edit code simultaneously.",
-      "technologies": [
-        "Next.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "SockJS",
-        "STOMP",
-        "Monaco Editor",
-        "Spring Boot",
-        "WebSocket",
-        "JWT",
-        "MongoDB"
-      ],
-      "image": "images/DevCollab.png",
-      "github": "https://github.com/Geethika-Kancharla/DevCollab",
-      "live": "https://blood-serve.vercel.app/",
-
-    },
     
     {
       "title": "BloodServe",
@@ -49,11 +29,32 @@ const Projects: React.FC = () => {
       "Probot",
       "Node.js",
       ],
-      "image": "images/Install.jpg",
+      "image": "images/Pr.jpg",
       "github": "https://github.com/Geethika-Kancharla/PRotect",
       "live": "https://github.com/apps/pryrag"
 
     },
+    {
+      "title": "DevCollab",
+      "description": "DevCollab is a real-time collaborative code editor that enables multiple users to write and edit code simultaneously.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "SockJS",
+        "STOMP",
+        "Monaco Editor",
+        "Spring Boot",
+        "WebSocket",
+        "JWT",
+        "MongoDB"
+      ],
+      "image": "images/DevCollab.png",
+      "github": "https://github.com/Geethika-Kancharla/DevCollab",
+      "live": "https://blood-serve.vercel.app/",
+
+    },
+    
     {
       "title": "TalentMatch",
       "description": "TalentMatch-AI is a centralized platform that uses an AI-powered agent to match student resumes with job opportunities posted by companies. It automates the process of sorting and ranking resumes based on relevance to company job descriptions, allowing businesses to find the best candidates efficiently.",
@@ -70,6 +71,7 @@ const Projects: React.FC = () => {
       "live": "https://www.youtube.com/watch?v=wgkMXzazlmQ"
 
     },
+
     {
       "title": "FreshSaver",
       "description": "FreshSaver is a web application designed to help users manage their food inventory efficiently by leveraging barcode scanning technology. It aims to reduce food wastage and promote sustainable consumption through timely expiration date tracking and recipe suggestions.",

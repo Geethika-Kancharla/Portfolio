@@ -3,14 +3,10 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
 
 const Links: React.FC = () => {
-  const openEmail = () => {
-    // Remove _blank to fix email opening issues
-    window.location.href = "mailto:geethikak004@gmail.com";
-  };
+  
 
   return (
     <>

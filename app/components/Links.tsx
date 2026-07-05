@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { MdEmail } from 'react-icons/md';
 
 const Links: React.FC = () => {
   
@@ -14,16 +15,20 @@ const Links: React.FC = () => {
       <div className="hidden md:flex fixed right-4 xl:right-6 top-1/2 transform -translate-y-1/2 flex-col space-y-4 z-50">
         {[{
           href: "https://github.com/Geethika-Kancharla",
-          icon: <FaGithub className="text-white text-2xl" />,
+          icon: <FaGithub className="text-2xl" />,
           label: "GitHub Profile"
         }, {
           href: "https://www.linkedin.com/in/geethika-kancharla-4634092a2",
-          icon: <FaLinkedin className="text-white text-2xl" />,
+          icon: <FaLinkedin className="text-2xl" />,
           label: "LinkedIn Profile"
         }, {
           href: "https://leetcode.com/u/Geethika-k/",
-          icon: <SiLeetcode className="text-white text-2xl" />,
+          icon: <SiLeetcode className="text-2xl" />,
           label: "LeetCode Profile"
+        },{
+          href: "mailto:geethikak004@gmail.com",
+          icon: <MdEmail className="text-2xl" />,
+          label: "Email"
         }].map(({ href, icon, label }, idx) => (
           <Link href={href} target="_blank" key={idx} className="group relative">
             <div className="bg-gray-800 p-3 rounded-full hover:scale-110 hover:brightness-110 transition-all duration-300 shadow-lg flex items-center justify-center">
@@ -49,6 +54,10 @@ const Links: React.FC = () => {
         }, {
           href: "https://leetcode.com/u/Geethika-k/",
           icon: <SiLeetcode className="text-white text-lg sm:text-xl" />
+        },{
+          href: "mailto:geethikak004@gmail.com",
+          icon: <MdEmail className="text-2xl" />,
+          label: "Email"
         }].map(({ href, icon }, idx) => (
           <Link href={href} target="_blank" key={idx} className="group">
             <div className="bg-gray-800 p-2.5 sm:p-3 rounded-full hover:scale-110 hover:brightness-110 transition-all duration-300 shadow-md flex items-center justify-center">

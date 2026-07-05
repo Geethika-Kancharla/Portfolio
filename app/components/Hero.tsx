@@ -1,58 +1,45 @@
-import Link from "next/link";
-
-const Hero: React.FC = () => {
+const Hero = () => {
     return (
-        <div className="text-white min-h-screen bg-gradient-to-br from-slate-950 to-slate-900 pt-12 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                <div className="mt-10 md:mt-24 flex flex-col md:flex-row items-center justify-between animate-fade-in">
-                    {/* Text Content */}
-                    <div className="md:w-1/2 space-y-8 text-center md:text-left">
-                        <div className="space-y-3">
-                            <p className="text-blue-400 font-medium text-2xl animate-slide-in-left">
-                                Hi there! I`m
-                            </p>
-                            <h2 className="text-6xl md:text-8xl font-extrabold leading-tight animate-slide-in-right">
-                                Geethika
-                            </h2>
-                            <p className="text-3xl md:text-4xl text-slate-300 animate-slide-in-left">
-                                Full Stack
-                                <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text ml-2">
-                                    Developer
-                                </span>
-                            </p>
-                        </div>
-
-                        <p className="text-slate-400 max-w-xl mx-auto md:mx-0 leading-relaxed animate-fade-in-up text-lg">
-                            Transforming ideas into elegant, scalable solutions. Passionate about creating
-                            seamless digital experiences that make a difference.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
-                            <Link href="https://github.com/Geethika-Kancharla">
-                                <button className="bg-blue-500 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition-transform transform hover:scale-105 duration-300 md:text-lg">
-                                     GitHub Profile
-                                 </button>
-                             </Link>
-                           
-                        </div>
-                    </div>
-
-                    {/* Image Content */}
-                    <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center items-center relative ">
-                        <div className="relative w-96 h-96 md:w-[30rem] md:h-[30rem] flex items-center justify-center">
-                            <img
-                                src="images/image.png"
-                                alt="John Doe - Developer Portrait"
-                                className="rounded-full bg-slate-800 object-cover shadow-lg hover:shadow-xl transition-shadow duration-300 animate-pop-in w-72 h-72"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 opacity-20 rounded-full blur-xl "></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 text-white">
+        {/* Background Glow */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute left-[-120px] top-20 h-72 w-72 rounded-full bg-blue-500/10 blur-[120px]" />
+          <div className="absolute bottom-0 right-[-120px] h-96 w-96 rounded-full bg-purple-500/10 blur-[140px]" />
         </div>
+  
+        <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center px-6 py-24 text-center sm:px-8 lg:px-12">
+          {/* Small Intro */}
+          <p className="mb-5 text-sm font-medium uppercase tracking-[0.3em] text-blue-400"></p>
+  
+          {/* Heading */}
+          <h1 className="text-5xl font-extrabold leading-tight sm:text-6xl md:text-7xl lg:text-8xl">
+            Hi, I&apos;m{" "}
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
+              Geethika
+            </span>
+          </h1>
+  
+          {/* Description */}
+          <p className="mt-8 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
+            I&apos;m passionate about building scalable web applications,
+            AI-powered solutions, and developer tools that combine clean
+            engineering with intuitive user experiences. I enjoy transforming
+            ideas into reliable, production-ready products.
+          </p>
+  
+          {/* Scroll Indicator */}
+          <div className="mt-20 flex flex-col items-center gap-3">
+            <div className="h-10 w-6 rounded-full border border-slate-600 p-1">
+              <div className="h-2 w-2 animate-bounce rounded-full bg-blue-400"></div>
+            </div>
+  
+            <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+              Scroll
+            </p>
+          </div>
+        </div>
+      </section>
     );
-};
-
-export default Hero;
+  };
+  
+  export default Hero;

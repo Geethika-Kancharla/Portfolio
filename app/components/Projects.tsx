@@ -1,43 +1,35 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Projects: React.FC = () => {
   const projects = [
-    
     {
-      "title": "BloodServe",
-      "description": "BloodServe is a web application which features role-based authentication, allowing users to register as donors and access analytical summaries of donor distributions by blood group. The system includes CRUD operations, enabling admins to manage donor records.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Spring Boot",
-        "MySQL"
-      ],
-      "image": "images/BloodServe.png",
-      "github": "https://github.com/Geethika-Kancharla/BloodServe",
-      "live": "https://dev-collab-eight.vercel.app/",
-
+      title: "BloodServe",
+      description:
+        "BloodServe is a web application which features role-based authentication, allowing users to register as donors and access analytical summaries of donor distributions by blood group. The system includes CRUD operations, enabling admins to manage donor records.",
+      technologies: ["React", "Tailwind CSS", "Spring Boot", "MySQL"],
+      image: "/images/BloodServe.png",
+      github: "https://github.com/Geethika-Kancharla/BloodServe",
+      live: "https://blood-serve.vercel.app/",
     },
     {
-      "title": "PRotect",
-      "description": "A GitHub App(bot) that automatically scans pull requests, identifies malicious code, and prevents security threats before they get merged. The bot provides inline PR comments, assigns a security score, and auto-closes PRs that fall below a threshold, ensuring your repository remains safe from supply chain attacks.",
-      "technologies": [
-        "GitHub App",
-      "Probot",
-      "Node.js",
-      ],
-      "image": "images/Pr.jpg",
-      "github": "https://github.com/Geethika-Kancharla/PRotect",
-      "live": "https://github.com/apps/pryrag"
-
+      title: "PRotect",
+      description:
+        "A GitHub App(bot) that automatically scans pull requests, identifies malicious code, and prevents security threats before they get merged. The bot provides inline PR comments, assigns a security score, and auto-closes PRs that fall below a threshold, ensuring your repository remains safe from supply chain attacks.",
+      technologies: ["GitHub App", "Probot", "Node.js"],
+      image: "/images/Pr.jpg",
+      github: "https://github.com/Geethika-Kancharla/PRotect",
+      live: "https://github.com/apps/pryrag",
     },
     {
-      "title": "DevCollab",
-      "description": "DevCollab is a real-time collaborative code editor that enables multiple users to write and edit code simultaneously.",
-      "technologies": [
+      title: "DevCollab",
+      description:
+        "DevCollab is a real-time collaborative code editor that enables multiple users to write and edit code simultaneously.",
+      technologies: [
         "Next.js",
         "Tailwind CSS",
         "TypeScript",
@@ -47,75 +39,82 @@ const Projects: React.FC = () => {
         "Spring Boot",
         "WebSocket",
         "JWT",
-        "MongoDB"
+        "MongoDB",
       ],
-      "image": "images/DevCollab.png",
-      "github": "https://github.com/Geethika-Kancharla/DevCollab",
-      "live": "https://blood-serve.vercel.app/",
-
+      image: "/images/DevCollab.png",
+      github: "https://github.com/Geethika-Kancharla/DevCollab",
+      live: "https://dev-collab-eight.vercel.app/",
     },
-    
     {
-      "title": "TalentMatch",
-      "description": "TalentMatch-AI is a centralized platform that uses an AI-powered agent to match student resumes with job opportunities posted by companies. It automates the process of sorting and ranking resumes based on relevance to company job descriptions, allowing businesses to find the best candidates efficiently.",
-      "technologies": [
+      title: "TalentMatch",
+      description:
+        "TalentMatch-AI is a centralized platform that uses an AI-powered agent to match student resumes with job opportunities posted by companies. It automates the process of sorting and ranking resumes based on relevance to company job descriptions, allowing businesses to find the best candidates efficiently.",
+      technologies: [
         "Next.js",
-      "Python",
-      "Flask",
-      "OpenAI",
-      "Tailwind CSS",
-      "Firebase",
+        "Python",
+        "Flask",
+        "OpenAI",
+        "Tailwind CSS",
+        "Firebase",
       ],
-      "image": "images/Talent.jpeg",
-      "github": "https://github.com/Geethika-Kancharla/TalentMatch-AI",
-      "live": "https://www.youtube.com/watch?v=wgkMXzazlmQ"
-
+      image: "/images/Talent.jpeg",
+      github: "https://github.com/Geethika-Kancharla/TalentMatch-AI",
+      live: "https://www.youtube.com/watch?v=wgkMXzazlmQ",
     },
-
     {
-      "title": "FreshSaver",
-      "description": "FreshSaver is a web application designed to help users manage their food inventory efficiently by leveraging barcode scanning technology. It aims to reduce food wastage and promote sustainable consumption through timely expiration date tracking and recipe suggestions.",
-      "technologies": [
+      title: "PostureCare",
+      description:
+        "A real-time chrome extension that monitors posture using MediaPipe Pose and provides real-time feedback.",
+      technologies: ["React", "Flask", "MediaPipe", "Tailwind CSS"],
+      image: "/images/PostureCare.jpg",
+      github: "https://github.com/Geethika-Kancharla/PostureCare",
+      live: "",
+    },
+    {
+      title: "FreshSaver",
+      description:
+        "FreshSaver is a web application designed to help users manage their food inventory efficiently by leveraging barcode scanning technology. It aims to reduce food wastage and promote sustainable consumption through timely expiration date tracking and recipe suggestions.",
+      technologies: [
         "React",
         "Tailwind CSS",
         "Firebase",
         "Open Food Facts API",
-        "Edamam API"
+        "Edamam API",
       ],
-      "image": "images/FS.png",
-      "github": "https://github.com/Geethika-Kancharla/FreshSaver",
-      "live": "https://fresh-saver.vercel.app/",
-
+      image: "/images/FS.png",
+      github: "https://github.com/Geethika-Kancharla/FreshSaver",
+      live: "https://fresh-saver.vercel.app/",
     },
     {
-      "title": "IWeb",
-      "description": "IWeb is a web application designed to enhance accessibility for individuals with visual impairments by utilizing advanced object detection technology.",
-      "technologies": [
+      title: "IWeb",
+      description:
+        "IWeb is a web application designed to enhance accessibility for individuals with visual impairments by utilizing advanced object detection technology.",
+      technologies: [
         "Object Detection Framework (YOLO)",
         "Text-to-Speech (Web-Speech API)",
         "React",
         "Flask",
-        "Tailwind CSS"
+        "Tailwind CSS",
       ],
-      "image": "images/IWeb.jpg",
-      "github": "https://github.com/Geethika-Kancharla/IWeb",
-      "live": "https://iweb-demo.com"
-
+      image: "/images/IWeb.jpg",
+      github: "https://github.com/Geethika-Kancharla/IWeb",
+      live: "",
     },
     {
-      "title": "CarbMine",
-      "description": "CarbMine is a web application that empowers features like carbon emission estimation, carbon neutrality simulations, data visualization, carbon credit calculations, and allows users to generate and store PDF reports of their analysis.",
-      "technologies": [
+      title: "CarbMine",
+      description:
+        "CarbMine is a web application that empowers features like carbon emission estimation, carbon neutrality simulations, data visualization, carbon credit calculations, and allows users to generate and store PDF reports of their analysis.",
+      technologies: [
         "React",
         "Tailwind CSS",
         "GSAP",
         "Python (Flask)",
-        "Firebase"
+        "Firebase",
       ],
-      "image": "images/CarbMine.png",
-      "github": "https://github.com/Geethika-Kancharla/CarbMine",
-      "live": "https://carbmine-demo.com",
-      "category": "Climate Change"
+      image: "/images/CarbMine.png",
+      github: "https://github.com/Geethika-Kancharla/CarbMine",
+      live: "",
+      category: "Climate Change",
     },
   ];
 
@@ -149,29 +148,38 @@ const Projects: React.FC = () => {
               transition={{ delay: idx * 0.2, duration: 0.6 }}
             >
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-contain transition-transform duration-500 group-hover:scale-110"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
-                <div className="absolute top-4 right-4 flex gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-slate-900/70 backdrop-blur-sm text-slate-300 hover:text-blue-400 transition-colors duration-300"
-                  >
-                    <FiGithub className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-slate-900/70 backdrop-blur-sm text-slate-300 hover:text-blue-400 transition-colors duration-300"
-                  >
-                    <FiExternalLink className="w-5 h-5" />
-                  </a>
+
+                <div className="absolute top-4 right-4 flex gap-3 z-10">
+                  {project.github.trim() && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-slate-900/70 backdrop-blur-sm text-slate-300 hover:text-blue-400 transition-colors duration-300"
+                    >
+                      <FiGithub className="w-5 h-5" />
+                    </a>
+                  )}
+
+                  {project.live.trim() && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-slate-900/70 backdrop-blur-sm text-slate-300 hover:text-blue-400 transition-colors duration-300"
+                    >
+                      <FiExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
 

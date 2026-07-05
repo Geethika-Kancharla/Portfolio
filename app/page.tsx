@@ -14,14 +14,14 @@ export default function Home() {
       <div id="home">
         <Hero />
       </div>
+      <div id="experience">
+        <Experience />
+      </div>
       <div id="skills">
         <Skills />
       </div>
       <div id="projects">
         <Projects />
-      </div>
-      <div id="experience">
-        <Experience />
       </div>
       <Footer/>
     </div>

@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center justify-between h-16 sm:h-20">
                     {/* Desktop Navigation */}
                     <div className="hidden sm:flex flex-1 items-center justify-center space-x-4 md:space-x-6 lg:space-x-8 text-sm sm:text-base md:text-lg lg:text-xl">
-                        {['Home', 'Skills', 'Projects', 'Experience'].map((section) => (
+                        {['Home', 'Experience','Skills', 'Projects', ].map((section) => (
                             <Link
                                 key={section}
                                 href={`#${section.toLowerCase()}`}
